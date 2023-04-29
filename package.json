@@ -4,11 +4,14 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "lint:fix": "turbo run lint -- --fix",
+    "prettier:fix": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format": "yarn prettier:fix && yarn lint:fix"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
+    "husky": "^8.0.3",
     "prettier": "^2.5.1",
     "turbo": "latest"
   },

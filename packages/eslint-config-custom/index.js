@@ -1,58 +1,58 @@
 module.exports = {
-  extends: ["next", "turbo", "airbnb", "airbnb-typescript", "prettier"],
-  parser: '@typescript-eslint/parser',
+  extends      : ["next", "turbo", "airbnb", "airbnb-typescript", "prettier"],
+  parser       : '@typescript-eslint/parser',
   parserOptions: {
     project: "./tsconfig.json",
   },
   rules: {
-    "react/button-has-type": "off",
+    "react/button-has-type"            : "off",
     "@next/next/no-html-link-for-pages": "off",
-    "react/jsx-key": "off",
-    "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off",
-    "import/prefer-default-export˘": "off",
-    "import/prefer-default-export": "warn",
-    "react/jsx-props-no-spreading": "off",
-    "no-unneeded-ternary": "off",
-    "jsx-a11y/anchor-is-valid": [
+    "react/jsx-key"                    : "off",
+    "react/jsx-uses-react"             : "off",
+    "react/react-in-jsx-scope"         : "off",
+    "import/prefer-default-export˘"    : "off",
+    "import/prefer-default-export"     : "warn",
+    "react/jsx-props-no-spreading"     : "off",
+    "no-unneeded-ternary"              : "off",
+    "jsx-a11y/anchor-is-valid"         : [
       "error",
       {
-        "components": ["Link"],
+        "components" : ["Link"],
         "specialLink": ["to"],
-        "aspects": ["noHref", "invalidHref", "preferButton"]
+        "aspects"    : ["noHref", "invalidHref", "preferButton"]
       }
     ],
-    "jsx-quotes": ["error", "prefer-double"],
-    "react/jsx-no-useless-fragment": "error",
+    "jsx-quotes"                       : ["error", "prefer-double"],
+    "react/jsx-no-useless-fragment"    : "error",
     "react/jsx-one-expression-per-line": "off",
-    "react/require-default-props": "off",
-    "react/sort-prop-types": "error",
-    "arrow-parens": ["error", "always"],
-    "curly": ["error", "all"],
-    "global-require": "off",
-    "import/no-dynamic-require": "off",
-    "import/order": [
+    "react/require-default-props"      : "off",
+    "react/sort-prop-types"            : "error",
+    "arrow-parens"                     : ["error", "always"],
+    "curly"                            : ["error", "all"],
+    "global-require"                   : "off",
+    "import/no-dynamic-require"        : "off",
+    "import/order"                     : [
       "error",
       {
         "alphabetize": {
           "caseInsensitive": true,
-          "order": "asc"
+          "order"          : "asc"
         },
         "pathGroups": [
           {
             // Put imported assets last
-            "pattern": "*.{css,gif,jpeg,png,scss,svg}",
+            "pattern"       : "*.{css,gif,jpeg,png,scss,svg}",
             "patternOptions": {
               "matchBase": true
             },
-            "group": "index",
+            "group"   : "index",
             "position": "after"
           }
         ]
       }
     ],
-    "max-len": ["warn", 120],
-    "no-console": ["error", { "allow": ["warn", "error", "info"] }],
+    "max-len"                : ["warn", 120],
+    "no-console"             : ["error", { "allow": ["warn", "error", "info"] }],
     "no-multiple-empty-lines": [
       "error",
       { "max": 1, "maxBOF": 0, "maxEOF": 0 }
@@ -63,23 +63,22 @@ module.exports = {
       "LabeledStatement",
       "WithStatement"
     ],
-    "no-shadow": ["error", { "hoist": "never", "allow": ["resolve"] }],
-    "object-curly-newline": "off",
+    "no-shadow"                      : ["error", { "hoist": "never", "allow": ["resolve"] }],
+    "object-curly-newline"           : "off",
     "padding-line-between-statements": [
       "error",
       { "blankLine": "always", "prev": "*", "next": "return" }
     ],
-    "yoda": "off",
+    "yoda"                             : "off",
     "import/no-extraneous-dependencies": "off",
-    "no-useless-escape": "off",
-    "react/react-in-jsx-scope": "off",
-    "react/prop-types": "off",
-    "import/no-unresolved": "off",
-    "import/no-named-as-default": "off",
-    "indent": [2],
-    "react/jsx-indent": [2],
-    "react/jsx-indent-props": 0,
-    "react/jsx-filename-extension": [
+    "no-useless-escape"                : "off",
+    "react/prop-types"                 : "off",
+    "import/no-unresolved"             : "off",
+    "import/no-named-as-default"       : "off",
+    "indent"                           : [2],
+    "react/jsx-indent"                 : [2],
+    "react/jsx-indent-props"           : 0,
+    "react/jsx-filename-extension"     : [
       2,
       {
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
@@ -88,13 +87,11 @@ module.exports = {
     "key-spacing": [
       2,
       {
-        "align": "colon",
-        "afterColon": true,
+        "align"      : "colon",
+        "afterColon" : true,
         "beforeColon": false
       }
     ],
-    "react/jsx-props-no-spreading": 0,
-    "import/prefer-default-export": 0,
     "import/extensions": 0
   },
 };

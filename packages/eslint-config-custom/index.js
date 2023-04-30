@@ -1,7 +1,8 @@
 module.exports = {
-  extends      : ["next", "turbo", "airbnb", "airbnb-typescript", "prettier"],
-  parser       : '@typescript-eslint/parser',
-  parserOptions: {
+  extends       : ["next", "turbo", "airbnb", "airbnb-typescript", "prettier"],
+  parser        : '@typescript-eslint/parser',
+  ignorePatterns: ["dist"],
+  parserOptions : {
     project: "./tsconfig.json",
   },
   rules: {

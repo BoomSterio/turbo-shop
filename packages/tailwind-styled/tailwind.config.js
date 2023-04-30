@@ -10,7 +10,8 @@ module.exports = {
     "./**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
+  darkMode: "class",
+  theme   : {
     extend: {
 
     },

@@ -22,7 +22,7 @@ module.exports = {
         "aspects"    : ["noHref", "invalidHref", "preferButton"]
       }
     ],
-    "jsx-quotes"                       : ["error", "prefer-double"],
+    "jsx-quotes"                       : ["error", "prefer-single"],
     "react/jsx-no-useless-fragment"    : "error",
     "react/jsx-one-expression-per-line": "off",
     "react/require-default-props"      : "off",

@@ -6,16 +6,17 @@ module.exports = {
     project: "./tsconfig.json",
   },
   rules: {
-    "react/button-has-type"            : "off",
-    "@next/next/no-html-link-for-pages": "off",
-    "react/jsx-key"                    : "off",
-    "react/jsx-uses-react"             : "off",
-    "react/react-in-jsx-scope"         : "off",
-    "import/prefer-default-export˘"    : "off",
-    "import/prefer-default-export"     : "off",
-    "react/jsx-props-no-spreading"     : "off",
-    "no-unneeded-ternary"              : "off",
-    "jsx-a11y/anchor-is-valid"         : [
+    "react/function-component-definition": "off",
+    "react/button-has-type"              : "off",
+    "@next/next/no-html-link-for-pages"  : "off",
+    "react/jsx-key"                      : "off",
+    "react/jsx-uses-react"               : "off",
+    "react/react-in-jsx-scope"           : "off",
+    "import/prefer-default-export˘"      : "off",
+    "import/prefer-default-export"       : "off",
+    "react/jsx-props-no-spreading"       : "off",
+    "no-unneeded-ternary"                : "off",
+    "jsx-a11y/anchor-is-valid"           : [
       "error",
       {
         "components" : ["Link"],

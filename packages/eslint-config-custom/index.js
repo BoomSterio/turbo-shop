@@ -33,26 +33,6 @@ module.exports = {
     "curly"                            : ["error", "all"],
     "global-require"                   : "off",
     "import/no-dynamic-require"        : "off",
-    "import/order"                     : [
-      "error",
-      {
-        "alphabetize": {
-          "caseInsensitive": true,
-          "order"          : "asc"
-        },
-        "pathGroups": [
-          {
-            // Put imported assets last
-            "pattern"       : "*.{css,gif,jpeg,png,scss,svg}",
-            "patternOptions": {
-              "matchBase": true
-            },
-            "group"   : "index",
-            "position": "after"
-          }
-        ]
-      }
-    ],
     "max-len"                : ["warn", 120],
     "no-console"             : ["error", { "allow": ["warn", "error", "info"] }],
     "no-multiple-empty-lines": [

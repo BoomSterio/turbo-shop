@@ -1,5 +1,5 @@
 import { tw } from 'tailwind-styled';
 
 export const SButton = tw.button`
-  text-red-100 rounded bg-green-700
+  text-woodsmoke-50 rounded-lg bg-primary px-4 py-2
 `;

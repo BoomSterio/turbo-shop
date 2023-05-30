@@ -11,8 +11,8 @@ export const HoverText = tw.span`
 
 export const ActualText = tw.span`
   relative
-  stroke-1 stroke-woodsmoke-500
-  text-primary
+  stroke-text
+  text-transparent
   transition-all duration-500
   translate-y-0
   group-hover:-translate-y-8

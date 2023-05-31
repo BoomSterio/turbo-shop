@@ -1,4 +1,6 @@
-const colors = require("tailwindcss/colors");
+const lightSky = '#81c4ff'
+const yaleBlue='#16588E'
+const crimson='#E7222E'
 
 module.exports = {
   content: [
@@ -14,9 +16,9 @@ module.exports = {
   theme   : {
     extend: {
       colors: {
-        primary  : colors.blue[300],
-        secondary: colors.blue[700],
-        accent   : colors.red[600],
+        primary  : lightSky,
+        secondary: yaleBlue,
+        accent   : crimson,
         woodsmoke: {
           50 : '#f2f6fa',
           100: '#e8eff6',
@@ -36,19 +38,21 @@ module.exports = {
           300: '#ff9fa9',
           400: '#ff6a7b',
           500: '#fd3651',
-          600: '#e7222e',
+          600: crimson,
           700: '#c70931',
           800: '#a60b31',
           900: '#8e0d31',
         },
         blue: {
           200: '#c2def5',
-          300: '#81c4ff',
+          300: lightSky,
           400: '#4fa6e1',
           500: '#288bcf',
           600: '#1a6eaf',
-          700: '#16588e',
+          700: yaleBlue,
           800: '#164b76',
+          900: '#184062',
+          950: '#102841',
         }
       }
     },

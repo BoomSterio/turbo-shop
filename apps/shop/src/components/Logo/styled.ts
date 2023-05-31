@@ -1,4 +1,4 @@
-import { tw } from "tailwind-styled";
+import { tw } from 'tailwind-styled'
 
 export const HoverText = tw.span`
   relative

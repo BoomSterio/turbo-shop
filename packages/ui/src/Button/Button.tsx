@@ -1,5 +1,5 @@
-import { SButton } from "./styled";
+import { SButton } from './styled'
 
 export function Button() {
-  return <SButton>Boop</SButton>;
+  return <SButton>Boop</SButton>
 }

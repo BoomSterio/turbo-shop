@@ -1,6 +1,6 @@
 'use client'
 
-import { ActualText, Container, HoverText } from "./styled";
+import { ActualText, Container, HoverText } from './styled'
 
 const Logo = () => (
   <Container>

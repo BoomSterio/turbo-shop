@@ -1,9 +1,9 @@
-import { tw } from 'tailwind-styled';
-import { SpinnerProps } from './types';
+import { tw } from 'tailwind-styled'
+import { SpinnerProps } from './types'
 
 export const SWrapper = tw.div`
   flex items-center justify-center
-`;
+`
 
 export const SLoader = tw.div<SpinnerProps>`
   block
@@ -14,13 +14,13 @@ export const SLoader = tw.div<SpinnerProps>`
   ${({ size }) => {
     switch (size) {
       case 'large':
-        return 'w-12';
+        return 'w-12'
       case 'medium':
-        return 'w-8';
+        return 'w-8'
       case 'small':
-        return 'w-4';
+        return 'w-4'
       default:
-        return 'w-8';
+        return 'w-8'
     }
   }}
-`;
+`
